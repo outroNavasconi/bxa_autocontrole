@@ -1,5 +1,6 @@
 @import "header.css";
 @import "section.css";
+@import "responsividade.css";
 
 html, body, h1, span, p, section, div, img {
   margin: 0;
@@ -19,11 +20,5 @@ html, body {
   padding: 6.25rem 0;
   align-items: center;
   flex-direction: column;
-  justify-content: space-between;
-}
-
-@media (min-height: 800px) {
-  .container {
-    justify-content: space-around;
-  }
+  justify-content: center;
 }
