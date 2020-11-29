@@ -1,0 +1,29 @@
+@import "header.css";
+@import "section.css";
+
+html, body, h1, span, p, section, div, img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100vw;
+  height: 100vh;  
+  background-color: #0d0d0d;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  padding: 6.25rem 0;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media (min-height: 800px) {
+  .container {
+    justify-content: space-around;
+  }
+}
