@@ -11,13 +11,9 @@ h1 {
 	font-family: 'Spartan', sans-serif;
 }
 
-[data-head-lost="true"] h1 {
-	color: #aa0d17;
-}
-
 .message {
-	display: none;
 	opacity: 1;
+	display: none;
 	width: fit-content;
 	border-radius: 1.5rem;
 	padding: 0 1.3rem 0 1.3rem;

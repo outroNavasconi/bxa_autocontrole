@@ -3,22 +3,24 @@ const head = document.getElementById("head")
 const personControlled = document.getElementById("personControlled")
 const personNotControlled = document.getElementById("personNotControlled")
 
-head.onclick = () => {
-	letHeadFall()
-	changeText()
-}
+head.onclick = () => letHeadFall()
 
 function letHeadFall() {
-	const value = body.dataset.headLost
-	if (value === "mantaing")
-		body.dataset.headLost = "falling"
+	if (body.dataset.headLost === "mantaing")
+		falling()
 	else
 		rising()
 }
 
+function falling() {
+	body.dataset.headLost = "falling"
+	setTimeout(() => changeText(), 1200)
+}
+
 function rising() {
 	body.dataset.headLost = "rising"
-	setTimeout(() => body.dataset.headLost = "mantaing", 1700)
+	setTimeout(() => changeText(), 1200)
+	setTimeout(() => body.dataset.headLost = "mantaing", 1500)
 }
 
 function changeText() {
