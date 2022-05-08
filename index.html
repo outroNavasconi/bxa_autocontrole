@@ -1,40 +1,35 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
-  <head>
-    <title> Autocontrole </title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito&family=Spartan&display=swap">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-  </head>
 
-  <body data-estado-animacoes="false">
-    <div class="container">
-<!--       <header>
-        <h1> Autocontrole </h1>
-        <span id="issoEhBom" class="fundoTexto seuEstadoEhEsse">
-          <p> Matenha a cabeça no lugar... </p>
-        </span>
-        <span id="issoNemTanto" class="fundoTexto">
-          <p> Você está fazendo isso errado... </p>
-        </span>
-      </header> -->
+<head>
+	<title> Autocontrole </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito&family=Spartan&display=swap">
+	<script defer type="text/javascript" src="js/script.js"></script>
+</head>
 
-      <section>
-        <div id="fundoCabeca">
+<body data-head-lost="mantaing">
+	<main>
+		<section class="person">
+			<div id="headBackground">
+				<div id="head"></div>
+			</div>
+			<img src="img/body.svg" alt="Corpo de uma pessoa">
+		</section>
 
+		<section class="text">
+			<h1> Autocontrole </h1>
+			<span id="personControlled" class="message youAreHere">
+				<p> Mantenha a cabeça no lugar... </p>
+			</span>
+			<span id="personNotControlled" class="message">
+				<p> Não é bem assim que se faz... </p>
+			</span>
+		</section>
+	</main>
+</body>
 
-          <div id="wrapper">
-            <div id="cabeca"></div>
-          </div>
-        </div>
-        <img src="img/corpo.svg" alt="Corpo de uma pessoa">
-      </section>
-
-    </div>
-
-    <script src="js/script.js"></script>
-  </body>
 </html>

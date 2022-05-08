@@ -1,5 +1,7 @@
 @import "text.css";
 @import "person.css";
+@import "textAnimation.css";
+@import "responsividade.css";
 @import "fallHeadAnimation.css";
 
 html, body, h1, span, p, section, div, img {

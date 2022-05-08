@@ -1,5 +1,6 @@
 .text {
 	margin-top: 3rem;
+	text-align: center;
 }
 
 h1 {
@@ -10,18 +11,29 @@ h1 {
 	font-family: 'Spartan', sans-serif;
 }
 
-.text p {
-	color: white;
-	font-size: 1rem;
-	text-align: center;
-	font-family: 'Nunito', sans-serif; 
+[data-head-lost="true"] h1 {
+	color: #aa0d17;
 }
 
-.teste {
-	display: block;
+.message {
+	display: none;
+	opacity: 1;
 	width: fit-content;
 	border-radius: 1.5rem;
-	background-color: #aa0d17;
 	padding: 0 1.3rem 0 1.3rem;
-	margin: 0.8rem auto 0 auto;
+	margin: 0.5rem auto 0 auto;
+}
+
+.message.youAreHere {
+	display: block;
+}
+
+#personNotControlled {
+	background-color: #aa0d17;
+}
+
+p {
+	color: white;
+	font-size: 1rem;
+	font-family: 'Nunito', sans-serif; 
 }
