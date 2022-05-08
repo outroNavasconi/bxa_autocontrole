@@ -1,13 +1,9 @@
 #fundoCabeca {
-  right: 27px;
   width: 108px;
-  height: 54px;
-  margin: 0 auto;
-  padding: 0.125rem;  
-  position: relative;  
+  min-height: 3.125rem;
+  position: /*relative*/;  
   border-radius: 1.75rem;
   margin-bottom: 0.625rem;
-  background-color: #1d1d1d;
 }
 
 #fundoCabeca.perdeuControle {
@@ -18,17 +14,41 @@
   transition: background-color 0.3s cubic-bezier(0.7, 0, 0.84, 0);
 }
 
+#wrapper {
+  width: 73%;
+}
+
 #cabeca {
-  right: 2px;
+  /*bottom: 0;*/
   cursor: pointer;
+  margin: 0 0 0 auto;
   width: 3.125rem;
   height: 3.125rem;  
-  position: absolute;
+  position: relative;
   border-radius: 50%;
   background-color: #ffffff;
+  padding-left: 10px;
 	
+}
+
+/*#cabeca.teste {
+  position: absolute;
+  bottom: 0;
+}*/
+
+#cabeca.teste {
+  transform: rotate(-90deg);
+}
+
+#wrapper.teste {
+  position: absolute;
+  transform: rotate(-90deg);
 }
 
 [data-estado-animacoes="true"] #cabeca {
   transition: right 0.3s cubic-bezier(0.7, 0, 0.84, 0);
+}
+
+section {
+  position: relative;
 }
