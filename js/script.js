@@ -1,32 +1,36 @@
-const cabeca = document.getElementById("cabeca")
-const fundoCabeca = document.getElementById("fundoCabeca")
-const issoEhBom = document.getElementById("issoEhBom")
-const issoNemTanto = document.getElementById("issoNemTanto")
+const body = document.querySelector("body")
+const head = document.getElementById("head")
+const personControlled = document.getElementById("controlled")
+const personNotControlled = document.getElementById("uncontrolled")
 
-cabeca.addEventListener("click", mudarEstadoMental) 
+let clickable = true
 
-function mudarEstadoMental() {
-  ativarAnimacoes()
-  perdendoACabeca()
-  precisandoConversar()
+head.onclick = () => letHeadFall()
+
+function letHeadFall() {
+	if (clickable) {
+		clickable = false
+		if (body.dataset.lostHead === "keep")
+			fall()
+		else
+			rise()
+	}
 }
 
-function ativarAnimacoes() {
-  const animacoes = document.querySelector("[data-estado-animacoes]")
-  if (animacoes.dataset.estadoAnimacoes === "false")
-    animacoes.dataset.estadoAnimacoes = "true"
+function fall() {
+	body.dataset.lostHead = "fall"
+	setTimeout(() => changeText(), 1000)
+	setTimeout(() => clickable = true, 1000)
 }
 
-function perdendoACabeca() {
-  fundoCabeca.classList.toggle("perdeuControle")
-  if (fundoCabeca.classList.contains("perdeuControle"))
-    cabeca.style.right = "56px"
-  else 
-    cabeca.style.right = "2px"
+function rise() {
+	body.dataset.lostHead = "rise"
+	setTimeout(() => changeText(), 1200)
+	setTimeout(() => clickable = true, 2000)
+	setTimeout(() => body.dataset.lostHead = "keep", 2000)
 }
 
-function precisandoConversar() {
-  issoEhBom.classList.toggle("seuEstadoEhEsse")
-  issoNemTanto.classList.toggle("seuEstadoEhEsse")
+function changeText() {
+	personControlled.classList.toggle("youAreHere")
+	personNotControlled.classList.toggle("youAreHere")
 }
-

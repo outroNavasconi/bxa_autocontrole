@@ -1,0 +1,24 @@
+#person {
+	position: relative;
+}
+
+#headBackground {
+	width: 108px;
+	min-height: 3.125rem;
+	margin-bottom: 0.625rem;
+}
+
+#head {
+	transform: translate(-50%);
+}
+
+#head::after {
+	content: "";
+	margin: 0 75%;
+	display: block;
+	cursor: pointer;
+	width: 3.125rem;
+	height: 3.125rem;
+	border-radius: 50%;
+	background-color: white;
+}

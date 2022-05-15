@@ -1,35 +1,33 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
-  <head>
-    <title> Autocontrole </title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito&family=Spartan&display=swap">
-    <link rel="stylesheet" type="text/css" href="css/main.css">
-  </head>
 
-  <body data-estado-animacoes="false">
-    <div class="container">
-      <header>
-        <h1> Autocontrole </h1>
-        <span id="issoEhBom" class="fundoTexto seuEstadoEhEsse">
-          <p> Matenha a cabeça no lugar... </p>
-        </span>
-        <span id="issoNemTanto" class="fundoTexto">
-          <p> Você está fazendo isso errado... </p>
-        </span>
-      </header>
+<head>
+	<title> Autocontrole </title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script defer type="text/javascript" src="js/script.js"></script>
+</head>
 
-      <section>
-        <div id="fundoCabeca">
-          <div id="cabeca"></div>
-        </div>
-        <img src="img/corpo.svg" alt="Corpo de uma pessoa">
-      </section>
-    </div>
+<body data-lost-head="keep">
+	<main>
+		<section id="person">
+			<div id="headBackground">
+				<div id="head"></div>
+			</div>
+			<img src="img/body.svg">
+		</section>
 
-    <script src="js/script.js"></script>
-  </body>
+		<section id="text">
+			<h1> Autocontrole </h1>
+			<span id="controlled" class="message youAreHere">
+				<p> Respire e mantenha a cabeça no lugar... </p>
+			</span>
+			<span id="uncontrolled" class="message">
+				<p> Não dá para ganhar todas, não é? </p>
+			</span>
+		</section>
+	</main>
+</body>
+
 </html>

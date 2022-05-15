@@ -1,10 +1,15 @@
-@import "header.css";
-@import "section.css";
-@import "responsividade.css";
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Nunito&display=swap");
+
+@import "text.css";
+@import "person.css";
+@import "textAnimation.css";
+@import "responsiveness.css";
+@import "personAnimation.css";
 
 html, body, h1, span, p, section, div, img {
   margin: 0;
   padding: 0;
+  user-select: none;
   box-sizing: border-box;
 }
 
@@ -15,9 +20,10 @@ html, body {
   background-color: #0d0d0d;
 }
 
-.container {
+main {
   height: 100%;
   display: flex;
+  position: relative;
   align-items: center;
   flex-direction: column;
   justify-content: center;

@@ -1,0 +1,36 @@
+[data-lost-head="rise"] .message.youAreHere {
+	animation: showWhereYouAre 0.7s cubic-bezier(0.7, 0, 0.84, 0) forwards;
+}
+
+[data-lost-head="fall"] .message.youAreHere {
+  animation: showWhereYouAre 0.7s cubic-bezier(0.7, 0, 0.84, 0) both;
+  animation-delay: 1s;
+}
+
+[data-lost-head="fall"] #controlled.youAreHere {
+  animation: fadeOut 0.3s cubic-bezier(0.7, 0, 0.84, 0) forwards;
+}
+
+[data-lost-head="rise"] #uncontrolled.youAreHere {
+  animation: fadeOut 0.3s cubic-bezier(0.7, 0, 0.84, 0) forwards;
+}
+
+@keyFrames showWhereYouAre {
+	from {
+    opacity: 0;
+    transform: translate(0, -10px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+@keyFrames fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
