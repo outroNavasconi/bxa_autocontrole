@@ -1,0 +1,71 @@
+[data-lost-head="fall"] #head {	
+	animation: fall 2s ease forwards;
+}
+
+[data-lost-head="rise"] #head {
+	animation: rise 1s ease forwards;
+}
+
+[data-lost-head="keep"] #head::after {
+	animation: keep 0.8s infinite ease-in-out;
+}
+
+@keyFrames fall {
+	0% {
+		transform: translate(-50%, 0) rotate(0);
+	}
+	20% {
+		transform: translate(-40%, 5%) rotate(0);
+	}
+	70% {
+		transform: translate(-25%, 80%) rotate(-180deg);
+	}
+	75% {
+		transform: translate(-15%, 440%) rotate(-180deg);
+	}
+	80% {
+		transform: translate(-20%, 420%) rotate(-180deg);
+	}
+	85% {
+		transform: translate(-25%, 440%) rotate(-180deg);
+	}
+	100% {
+		transform: translate(-30%, 440%) rotate(-180deg);
+	}
+}
+
+@keyFrames rise {
+	0% {
+		transform: translate(-30%, 440%) rotate(-180deg);
+	}
+	20% {
+		transform: translate(-30%, 400%) rotate(-180deg);
+	}
+	50% {
+		transform: translate(-30%, 140%) rotate(-180deg);
+	}
+	60% {
+		transform: translate(-30%, 100%) rotate(-150deg);
+	}
+	100% {
+		transform: translate(-50%, 0) rotate(0);
+	}
+}
+
+@keyFrames keep {
+	0% {
+		transform: translateX(0);
+	}
+	25% {
+		transform: translateX(3%);
+	}
+	50% {
+		transform: translateX(-5%);
+	}
+	75% {
+		transform: translate(1%);
+	}
+	100%, 0% {
+		transform: translate(-3%);
+	}
+}

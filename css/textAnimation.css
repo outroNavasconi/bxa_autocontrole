@@ -1,17 +1,17 @@
-[data-head-lost="rising"] .message.youAreHere {
+[data-lost-head="rise"] .message.youAreHere {
 	animation: showWhereYouAre 0.7s cubic-bezier(0.7, 0, 0.84, 0) forwards;
 }
 
-[data-head-lost="falling"] .message.youAreHere {
+[data-lost-head="fall"] .message.youAreHere {
   animation: showWhereYouAre 0.7s cubic-bezier(0.7, 0, 0.84, 0) both;
   animation-delay: 1s;
 }
 
-[data-head-lost="falling"] #personControlled.youAreHere {
+[data-lost-head="fall"] #controlled.youAreHere {
   animation: fadeOut 0.3s cubic-bezier(0.7, 0, 0.84, 0) forwards;
 }
 
-[data-head-lost="rising"] #personNotControlled.youAreHere {
+[data-lost-head="rise"] #uncontrolled.youAreHere {
   animation: fadeOut 0.3s cubic-bezier(0.7, 0, 0.84, 0) forwards;
 }
 

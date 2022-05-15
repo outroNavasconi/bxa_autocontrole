@@ -1,8 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Nunito&display=swap");
+
 @import "text.css";
 @import "person.css";
 @import "textAnimation.css";
-@import "responsividade.css";
-@import "fallHeadAnimation.css";
+@import "responsiveness.css";
+@import "personAnimation.css";
 
 html, body, h1, span, p, section, div, img {
   margin: 0;
